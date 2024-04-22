@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ahorro Semanal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>METAS</h1>
+  </header>
+  <div class="container">
+    <div class="form">
+      <h2>Registro de Ahorro</h2>
+      <label for="daySelect">Día:</label>
+      <select id="daySelect">
+        <option value="Lunes">Lunes</option>
+        <option value="Martes">Martes</option>
+        <option value="Miércoles">Miércoles</option>
+        <option value="Jueves">Jueves</option>
+        <option value="Viernes">Viernes</option>
+        <option value="Sábado">Sábado</option>
+        <option value="Domingo">Domingo</option>
+      </select>
+      <label for="amount">Cantidad:</label>
+      <input type="number" id="amount" min="0">
+      <button onclick="guardarAhorro()">Guardar</button>
+    </div>
+    <div class="summary">
+      <button onclick="verTotal()">Ver Total</button>
+      <button onclick="eliminarTodo()">Eliminar Todo</button>
+      <ul id="ahorroList"></ul>
+      <p id="totalAmount"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+
+  <header>
+    <h1>1,000,000 $ </h1>
+  </header>
+  
+  
+</body>
+</html>
